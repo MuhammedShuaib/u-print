@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;400;600;700&family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&family=Urbanist:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+:root {
+  --bs-dark-color: #1a1d20;
+  --bs-dark-primary: #1c1c1c;
+  --bs-main-color: #fff;
+  --bs-primary-color: #c6c6c6;
+  --secondary-color: #fff;
+  --bs-supporting-color: #c850c0;
+
+  --bs-color-primary: #000000cf;
+  --bs-color-primary-light: #7ed56f;
+  --bs-color-primary-dark: #335f50d1;
+}
+
+/* // COLORS
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$color-white: #fff;
+$color-black: #000; */
+body {
+  background: #f7f7f7;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lexand Deca", sans-serif;
+  color: var(--bs-dark-color);
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  line-height: 4rem;
+  font-weight: 600;
+  font-size: 3.4rem;
+}
+
+h5 {
+  height: 35px;
+  text-align: center;
+}
+p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--bs-dark-color);
+  letter-spacing: 0.07rem;
+  line-height: 1.55rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+button,
+a {
+  font-size: 1.15rem !important;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.1rem;
+}
+
+header {
+  background-color: #42524c;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+i {
+  color: var(--secondary-color);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  border: #fff;
+  font-weight: 700;
+}
+
+.btn-white:hover {
+  background-color: #777;
+  color: #fff;
+}
+.common-heading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem !important;
+}
+
+.common-title {
+  margin-top: 5rem;
+  padding-bottom: 2rem;
+  text-shadow: 0.5rem 1rem 2rem rgba(17, 17, 17, 0.2);
+}
+
+.common-section-1 {
+  padding: 8rem 0 10rem 0;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.common-section-2 {
+  padding: 0 0 2rem 0;
+}
+
+/* navbar style*/
+
+.nav-link {
+  color: var(--bs-main-color);
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--bs-primary-color) !important;
+  border-bottom: 1px solid var(--bs-main-color);
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  letter-spacing: 0.8rem;
+}
+
+/*main section starts*/
+.hero-section .container {
+  display: grid;
+  place-content: center;
+  height: inherit;
+}
+.hero-section--img {
+  width: 30rem;
+  border-radius: 2rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border: 10px solid #fff;
+  outline-offset: 2rem;
+}
+.hero-video--section {
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.bg-main {
+  height: 80vh;
+  position: relative;
+}
+
+.bg-color {
+  background: linear-gradient(
+    to right bottom,
+    var(--bs-color-primary),
+    var(--bs-color-primary-dark)
+  );
+}
+
+.bg-main {
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+}
+
+.text-light-grey {
+  color: var(--bs-primary-color);
+}
+.icon-div i {
+  font-size: 2rem;
+}
+
+/* objectives section */
+
+.objectives-section {
+  padding: 0 0 3rem 0 !important;
+}
+
+.icon-span {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--bs-color-primary-dark);
+}
+
+.card-box:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+/* more-info-section style */
+.more-info-section {
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.more-info-section .img-section {
+  position: relative;
+}
+
+.more-info-section .img-section img {
+  width: 70%;
+}
+
+/* online mode stylyig */
+
+/* carousel stylings */
+.carousel .card {
+  background-color: var(--bs-color-primary);
+  color: var(--bs-main-color);
+  transition: all 0.3s linear;
+}
+
+.carousel-inner .card p {
+  color: var(--bs-main-color);
+}
+
+.carousel-inner .card:hover {
+  background: var(--bs-main-color);
+  color: var(--bs-dark-color);
+}
+
+.carousel-inner .card:hover p {
+  color: var(--bs-dark-color);
+}
+.carousel-indicators {
+  bottom: -20%;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: var(--secondary-color);
+}
+
+/* Products */
+.text-grey {
+  color: var(--bs-primary-color);
+}
+
+.text-light-grey {
+  color: var(--bs-primary-color);
+}
+
+/* footer section styling */
+.main-footer-section {
+  position: relative;
+}
+
+.main-footer-section {
+  padding: 0 0 1rem 0;
+  color: var(--bs-main-color);
+}
+
+.icon-div {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* media queries for reponsiveness */
+
+@media screen and (max-width: 1200px) {
+  .hero-section--img {
+    width: 22rem;
+    border-radius: 1rem;
+    margin-top: 5rem;
+  }
+  .card-box img {
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .navbar-toggler {
+    border-color: var(--bs-primary-color);
+    height: 50px;
+  }
+  .navbar-toggler-icon {
+    color: var(--secondary-color);
+    background-color: var(--bs-main-color);
+    padding: 1rem;
+  }
+
+  h1 {
+    margin: auto;
+
+    font-size: 2.4rem;
+  }
+  section .common-heading {
+    font-size: 2rem;
+  }
+  section .para-width {
+    width: auto;
+  }
+
+  .hero-section {
+    height: 100vh;
+  }
+  h2 {
+    margin: auto;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+  .more-info-section {
+    text-align: center;
+  }
+  .carousel .carousel-indicators {
+    bottom: -8%;
+  }
+  .card-box img {
+    width: 6rem;
+  }
+  .card-img-top {
+    width: 10rem;
+    margin: auto;
+  }
+
+  .icon-div p {
+    font-size: 1rem;
+  }
+  .icon-div i {
+    font-size: 1.5rem;
+  }
+}
