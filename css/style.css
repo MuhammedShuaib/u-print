@@ -242,11 +242,17 @@ i {
 
 .carousel-inner .card:hover {
   background: var(--bs-main-color);
-  color: var(--bs-dark-color);
 }
 
 .carousel-inner .card:hover p {
   color: var(--bs-dark-color);
+}
+.carousel-inner .card:hover h5 {
+  color: var(--bs-dark-color);
+}
+
+.carousel-inner .card:hover .fa-solid {
+  color: var(--bs-color-primary-dark);
 }
 .carousel-indicators {
   bottom: -20%;
